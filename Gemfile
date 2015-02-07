@@ -60,6 +60,11 @@ group :development, :test do
   gem 'spring'
 end
 
+#sidekiq
+gem 'sidekiq-status', '~> 0.5.1'
+gem 'sidekiq', '~> 3.3.2'
+gem 'sidekiq-failures', '~> 0.4.3'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
