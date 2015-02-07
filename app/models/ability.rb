@@ -9,6 +9,7 @@ class Ability
         if user.role? :admin
             can :manage, :all
         elsif user.role? :Principal
+            can :manage, [User]
         elsif user.role? :HOD_Panel
         elsif user.role? :Class_Teacher
         elsif user.role? :Teacher
